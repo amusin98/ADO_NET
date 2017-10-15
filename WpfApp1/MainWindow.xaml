@@ -5,8 +5,21 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp1"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="MainWindow" Height="561.614" Width="1354.095">
     <Grid>
+        <DataGrid  Name="UsersGrid" HorizontalAlignment="Left" Height="369" VerticalAlignment="Top" Width="388" Margin="23,40,0,0"/>
+        <DataGrid Name="PaymentsGrid" HorizontalAlignment="Left" Height="369" Margin="440,40,0,0" VerticalAlignment="Top" Width="356"/>
+        <DataGrid Name="GoalsGrid" HorizontalAlignment="Left" Height="369" Margin="833,40,0,0" VerticalAlignment="Top" Width="158"/>
+        <Button Content="Считать данные" HorizontalAlignment="Left" Margin="267,463,0,0" VerticalAlignment="Top" Width="209" Height="39" Click="Button_Click"/>
+        <Button Content="Синхронизировать с БД&#xD;&#xA;" HorizontalAlignment="Left" Margin="552,463,0,0" VerticalAlignment="Top" Width="196" Height="39" Click="Button_Click_2"/>
+        <Button Content="Искать" HorizontalAlignment="Left" Margin="267,420,0,0" VerticalAlignment="Top" Width="112" Height="35" Click="Button_Click_3"/>
+        <TextBox Name="User" HorizontalAlignment="Left" Height="35" Margin="51,420,0,0" TextWrapping="Wrap" Text="Фамилия пользователя" VerticalAlignment="Top" Width="186"/>
+        <TextBox Name="Goal" HorizontalAlignment="Left" Height="35" Margin="440,420,0,0" TextWrapping="Wrap" Text="Название цели платежа" VerticalAlignment="Top" Width="186"/>
+        <Button HorizontalAlignment="Left" Margin="684,420,0,0" VerticalAlignment="Top" Width="112" Height="35" Content="Искать" Click="Button_Click_4"/>
+        <TextBox Name="Goal2" HorizontalAlignment="Left" Height="35" Margin="833,420,0,0" TextWrapping="Wrap" Text="Название цели" VerticalAlignment="Top" Width="97"/>
+        <Button Content="Искать" HorizontalAlignment="Left" VerticalAlignment="Top" Width="112" Height="35" Margin="930,420,0,0" Click="Button_Click_5"/>
         
+        <TextBlock  Name="view" HorizontalAlignment="Left" Margin="1048,40,0,0" TextWrapping="Wrap" VerticalAlignment="Top"  Width="266"/>
+
     </Grid>
 </Window>
